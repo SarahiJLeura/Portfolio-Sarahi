@@ -3,8 +3,9 @@ import GlassCard from './GlassCard'
 import TechBadge from './TechBadge'
 
 const ProjectCard = ({ project }) => {
-  const allTech = Object.values(project.stack)
-  .flat()
+  const allTech = Object.entries(project.stack)
+  .filter(([key]) => key !== 'tools')
+  .flatMap(([, value]) => value)
   .map(t => t.name)
   return (
     <div className={`${project.colSpan} group cursor-pointer`}>

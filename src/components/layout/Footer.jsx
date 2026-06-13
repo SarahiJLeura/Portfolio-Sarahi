@@ -8,7 +8,7 @@ const Footer = () => {
             <span className="font-display-lg text-headline-md text-on-surface">Sarahi.dev</span>
           </div>
           <p className="text-on-secondary-fixed-variant font-body-md">
-            © 2024 Digital Atelier. Crafted with precision.
+            © 2026 Patricia Sarahi Jimenez Leura. Crafted with precision.
           </p>
         </div>
         <div className="flex gap-8">

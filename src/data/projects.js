@@ -55,6 +55,22 @@ export const projects = [
         {
           name: "Git",
           description: "Control de versiones"
+        },
+        {
+          name: "Mailtrap / SMTP",
+          description: "Envío de correos electrónicos"
+        },
+        {
+          name: "DomPDF",
+          description: "Generación automática de PDFs"
+        },
+        {
+          name: "Postman",
+          description: "Pruebas de API"
+        },
+        {
+          name: "Docker",
+          description: "Contenedores para desarrollo y despliegue"
         }
       ]
     },
@@ -147,6 +163,14 @@ export const projects = [
         {
           name: "Git",
           description: "Control de versiones del proyecto"
+        },
+        {
+          name: "PHPMailer",
+          description: "Envío de correos electrónicos"
+        },
+        {
+          name: "XAMPP",
+          description: "Entorno de desarrollo local para PHP y MySQL"
         }
       ]
     },
@@ -191,19 +215,20 @@ export const projects = [
   },
   {
     id: 3,
-    title: "School management system",
+    title: "GlobalQuest: Agencia de Viajes",
     description:
-      "Sistema para gestión de gimnasios con control de membresías, inventario y operaciones en tiempo real.",
+      "Sistema de agencia de viajes con gestión de usuarios, destinos, hospedajes, transportes y generación de itinerarios con PDF y correo automático.",
 
     longDescription:
-      "Plataforma empresarial diseñada para la administración integral de gimnasios, incluyendo gestión de usuarios, control de membresías, inventario y seguimiento operativo en tiempo real. Elaborada en equipo.",
+      "Plataforma desarrollada en Laravel 13 para la administración de una agencia de viajes. Permite registro e inicio de sesión de usuarios (admin y cliente), gestión de catálogos completos (usuarios, destinos, hospedajes, viajes y transportes), dashboard con gráficas en Chart.js, integración con API de transportes con Laravel, generación de viajes con envío de correo electrónico y PDF automático usando Mailer y DomPDF, además de importación/exportación de usuarios en CSV.",
 
-    image: images.gym.cover,
-    gallery: images.gym.gallery,
+    image: images.viajes.cover,
+    gallery: images.viajes.gallery,
 
-    youtubeId: "fnaHWV5M-4s",
-    category: "ERP / gym management",
-    repository: "https://github.com/christian10-M/GymControl",
+    youtubeId: "",
+    category: "Travel Management System / Laravel",
+
+    repository: "https://github.com/SarahiJLeura/Agencia-Viajes-Laravel13",
 
     featured: true,
     colSpan: "md:col-span-6",
@@ -216,26 +241,30 @@ export const projects = [
           description: "Motor de plantillas de Laravel"
         },
         {
-          name: "Livewire",
-          description: "Componentes reactivos sin JS complejo"
+          name: "Tailwind CSS",
+          description: "Diseño responsivo mobile-first"
         },
         {
-          name: "Tailwind CSS",
-          description: "UI utility-first"
+          name: "Chart.js",
+          description: "Visualización de datos en dashboards"
         }
       ],
 
       backend: [
         {
-          name: "Laravel 11",
+          name: "Laravel 13",
           description: "Framework principal del sistema"
+        },
+        {
+          name: "PHP",
+          description: "Lógica de negocio del backend"
         }
       ],
 
       database: [
         {
           name: "MySQL",
-          description: "Base de datos relacional normalizada"
+          description: "Base de datos relacional"
         }
       ],
 
@@ -243,6 +272,18 @@ export const projects = [
         {
           name: "Git",
           description: "Control de versiones"
+        },
+        {
+          name: "Mailtrap / SMTP",
+          description: "Envío de correos electrónicos"
+        },
+        {
+          name: "DomPDF",
+          description: "Generación automática de PDFs"
+        },
+        {
+          name: "Docker",
+          description: "Contenedores para desarrollo y despliegue"
         }
       ]
     },
@@ -251,47 +292,49 @@ export const projects = [
       {
         type: "frontend",
         title: "Frontend",
-        description: "UI reactiva con componentes reutilizables"
+        description: "Interfaz responsiva con Blade y Tailwind CSS"
       },
       {
         type: "backend",
         title: "Backend",
-        description: "Lógica de negocio y API con Laravel"
+        description: "Gestión de usuarios, viajes y catálogos con Laravel"
       },
       {
         type: "integration",
-        title: "Integración",
-        description: "Comunicación en tiempo real con Livewire"
+        title: "Integración externa",
+        description: "API de transportes en Laravel + envío de correos y PDFs"
       }
     ],
 
     modules: [
-      "Gestión de membresías",
-      "Inventario",
-      "Control de acceso",
-      "Reportes en tiempo real",
-      "Máquinas",
-      "Rutinas",
-      "Músculos",
-      "Ejercicios",
-      "Usuarios"
+      "Registro e inicio de sesión (Admin / Cliente)",
+      "Gestión de usuarios (CRUD + import/export CSV)",
+      "Gestión de destinos turísticos",
+      "Gestión de hospedajes",
+      "Gestión de transportes (API externa)",
+      "Creación y confirmación de viajes",
+      "Generación automática de PDF con itinerario",
+      "Envío de correo con confirmación de viaje",
+      "Dashboard con gráficas en Chart.js",
+      "Roles y permisos (Admin / Cliente)"
     ]
   },
   {
     id: 4,
-    title: "Example project",
+    title: "School Management System",
     description:
-      "Sistema para gestión de gimnasios con control de membresías, inventario y operaciones en tiempo real.",
+      "Sistema de gestión escolar para administración de estudiantes, docentes, clases, horarios y control académico.",
 
     longDescription:
-      "Plataforma empresarial diseñada para la administración integral de gimnasios, incluyendo gestión de usuarios, control de membresías, inventario y seguimiento operativo en tiempo real. Elaborada en equipo.",
+      "Plataforma desarrollada para la gestión integral de una institución educativa. Permite administrar estudiantes, docentes, cursos, clases, horarios y evaluaciones, así como la entrega de tareas en PDF, centralizando la información académica en un sistema web eficiente y escalable.",
 
-    image: images.gym.cover,
-    gallery: images.gym.gallery,
+    image: images.school.cover,
+    gallery: images.school.gallery,
 
     youtubeId: "fnaHWV5M-4s",
-    category: "ERP / gym management",
-    repository: "https://github.com/christian10-M/GymControl",
+    category: "Education Management System / Laravel",
+
+    repository: "https://github.com/SarahiJLeura/school-management-system",
 
     featured: true,
     colSpan: "md:col-span-6",
@@ -304,26 +347,30 @@ export const projects = [
           description: "Motor de plantillas de Laravel"
         },
         {
-          name: "Livewire",
-          description: "Componentes reactivos sin JS complejo"
+          name: "Tailwind CSS",
+          description: "Diseño responsivo y utilidades CSS"
         },
         {
-          name: "Tailwind CSS",
-          description: "UI utility-first"
+          name: "Livewire",
+          description: "Componentes dinámicos sin JavaScript complejo"
         }
       ],
 
       backend: [
         {
-          name: "Laravel 11",
+          name: "Laravel 12",
           description: "Framework principal del sistema"
+        },
+        {
+          name: "PHP",
+          description: "Lógica de negocio del backend"
         }
       ],
 
       database: [
         {
           name: "MySQL",
-          description: "Base de datos relacional normalizada"
+          description: "Base de datos relacional para gestión académica"
         }
       ],
 
@@ -331,6 +378,10 @@ export const projects = [
         {
           name: "Git",
           description: "Control de versiones"
+        },
+        {
+          name: "Filesystem de Laravel",
+          description: "Almacenamiento de tareas en PDF"
         }
       ]
     },
@@ -339,30 +390,30 @@ export const projects = [
       {
         type: "frontend",
         title: "Frontend",
-        description: "UI reactiva con componentes reutilizables"
+        description: "Interfaz web dinámica con Blade, Livewire y Tailwind CSS"
       },
       {
         type: "backend",
         title: "Backend",
-        description: "Lógica de negocio y API con Laravel"
+        description: "Gestión de lógica académica, usuarios y cursos con Laravel"
       },
       {
         type: "integration",
         title: "Integración",
-        description: "Comunicación en tiempo real con Livewire"
+        description: "Comunicación en tiempo real entre componentes mediante Livewire"
       }
     ],
 
     modules: [
-      "Gestión de membresías",
-      "Inventario",
-      "Control de acceso",
-      "Reportes en tiempo real",
-      "Máquinas",
-      "Rutinas",
-      "Músculos",
-      "Ejercicios",
-      "Usuarios"
+      "Gestión de estudiantes",
+      "Gestión de docentes",
+      "Gestión de cursos",
+      "Gestión de clases",
+      "Control de horarios",
+      "Asignación de materias",
+      "Gestión de calificaciones",
+      "Administración de usuarios",
+      "Reportes académicos"
     ]
   }
 ]

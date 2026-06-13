@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import TechBadge from '../common/TechBadge'
 
 const ProjectHero = ({ project }) => {
-  const allTech = Object.values(project.stack)
-  .flat()
+  const allTech = Object.entries(project.stack)
+  .filter(([key]) => key !== 'tools')
+  .flatMap(([, value]) => value)
   .map(t => t.name)
   return (
     <section className="px-6 md:px-gutter max-w-container-max mx-auto py-12">
