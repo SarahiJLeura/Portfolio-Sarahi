@@ -66,6 +66,7 @@ const ProjectDetailPage = () => {
         <ProjectArchitecture
           architecture={project.architecture}
           description={project.longDescription}
+          modules={project.modules}
         />
 
         <ProjectStack stack={project.stack} />

@@ -39,7 +39,7 @@ export const projects = [
 
       backend: [
         {
-          name: "Laravel 11",
+          name: "Laravel 13",
           description: "Framework principal del sistema"
         }
       ],
@@ -119,7 +119,7 @@ export const projects = [
     image: images.hotel.cover,
     gallery: images.hotel.gallery,
 
-    youtubeId: "",
+    youtubeId: "8AznnAZvU2E",
     category: "Hotel Management System",
 
     repository:
@@ -311,7 +311,7 @@ export const projects = [
       "Gestión de usuarios (CRUD + import/export CSV)",
       "Gestión de destinos turísticos",
       "Gestión de hospedajes",
-      "Gestión de transportes (API externa)",
+      "Gestión de transportes (API en Laravel)",
       "Creación y confirmación de viajes",
       "Generación automática de PDF con itinerario",
       "Envío de correo con confirmación de viaje",
@@ -331,7 +331,7 @@ export const projects = [
     image: images.school.cover,
     gallery: images.school.gallery,
 
-    youtubeId: "fnaHWV5M-4s",
+    youtubeId: "",
     category: "Education Management System / Laravel",
 
     repository: "https://github.com/SarahiJLeura/school-management-system",
